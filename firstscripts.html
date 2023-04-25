@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 | Ayush Patel's Angry Panda | First Scripts</title> 
+    <script src="scripts/defaultscripts.js"></script>
+    <link rel="stylesheet" href="styles/default.css" type="text/css" >
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html">
+        <h1>ITIS 3135 | Ayush Patel's Angry Panda | First Scripts</h1>
+    </div>
+    <hr>
+    </header>
+    <main>
+    <h2>First Scripts</h2>
+    <h2 id="time">Time is:</h2>
+    <section class="script1">
+        <form class="script1">
+            <label class="script1" for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label class="script1" for="mood">How are you feeling?:</label>
+            <input type="text" id="mood" name="mood"><br><br>
+          </form>
+          <button class="script1" onclick="scriptTest()">Submit</button>
+          <h3 id="introduction" >Welcome to Patel Corporations!</h3>
+    </section>
+    <section class="script1">
+        <h2>Workout Selector</h2>
+        <p> Select if you participate in any of the activities listed below.</p>
+        
+        <form class="script1">
+          <input class="script1" type="checkbox" id="bench-press">
+          <label for="bench-press">Bench Press</label><br><br>
+          <input type="checkbox" id="squatting">
+          <label for="squatting">Squatting</label><br><br>
+          <input type="checkbox" id="deadlifting">
+          <label for="deadlifting">Deadlifting</label><br><br>
+          <input type="checkbox" id="running">
+          <label for="running">Running</label><br><br>
+          <input type="checkbox" id="swimming">
+          <label for="swimming">Swimming</label><br><br>
+        </form>
+        <button class="script1" onclick="displayWorkouts()">Submit Workouts</button>
+    </section>
+       <section class="script1">
+        <br>
+        <form class="script1">
+            <label for="self-defense">Select your self defense experience:</label><br>
+            <select id="self-defense">
+              <option value="None">None</option>
+              <option value="Wrestling">Wrestling</option>
+              <option value="Boxing">Boxing</option>
+              <option value="Karate">Karate</option>
+            </select>
+          </form>
+          <br><button class="script1" onclick="displayExperience()">Submit Self-defense Experience</button>
+          <br><br>
+          <h3 id="experience">Your self defense  experience is:</h3>
+       </section>
+       <section class="script1">
+        <h2>Caloric Balance</h2>
+        <form class="script1">
+          <label for="calories-eaten">Enter the number of calories eaten:</label><br><br>
+          <input type="number" id="calories-eaten">
+          <br><br>
+          <label for="calories-burned">Enter the number of calories burned:</label><br><br>
+          <input type="number" id="calories-burned">
+        </form>
+        <br>
+        <button class="script1" onclick="calculateBalance()">Calculate Calorie Count</button>
+        <br>
+        <h3 id="balance">Your caloric balance is:</h3>
+       </section>
+       <section class="script1">
+      <h2>Weight Tracker</h2>
+    <form class="script1">
+      <label for="current-weight">Enter your current weight:</label><br><br>
+      <input type="text" id="current-weight"><br>
+      <label for="goal-weight">Enter your goal weight:</label><br>
+      <input type="text" id="goal-weight">
+    </form>
+    <br>
+    <button class="script1" onclick="calculateDifference()">Calculate Total Weight Gain/Loss</button>
+    <h3 id="difference">You need to lose/gain:</h3>
+    </section>
+    <section class="script1">
+        <h2>Click An Option Below For Fitness Suggestions</h2>
+    <br>
+    <button class="script1" onclick="GainWeight()">Gain Weight</button>
+    <br>
+    <button class="script1" onclick="LoseWeight()">Lose Weight</button>
+    <br><br>
+    <div class="script1" id="result"></div>
+    </section>
+    
+    </main>
+    <hr>
+    <footer>
+    <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.min.js"></script>
+  </body>
+  </html>
